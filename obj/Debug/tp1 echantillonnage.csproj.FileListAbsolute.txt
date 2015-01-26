@@ -1,0 +1,2 @@
+C:\Users\Emmanuel\Documents\Prog\Stats\tp1 echantillonnage\bin\Debug\tp1 echantillonnage.exe.config
+C:\Users\Emmanuel\Documents\Prog\Stats\Tp1-stats\bin\Debug\tp1 echantillonnage.exe.config
