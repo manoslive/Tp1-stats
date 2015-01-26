@@ -43,10 +43,12 @@
             this.BTN_Save = new System.Windows.Forms.Button();
             this.BTN_Generer = new System.Windows.Forms.Button();
             this.BTN_ChoisirFichier = new System.Windows.Forms.Button();
+            this.DGV_Population = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Fichier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Echantillon)).BeginInit();
             this.GB_Methodes.SuspendLayout();
             this.GB_Fichier.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Population)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -204,12 +206,22 @@
             this.BTN_ChoisirFichier.TabIndex = 6;
             this.BTN_ChoisirFichier.Text = "Choisir un fichier";
             this.BTN_ChoisirFichier.UseVisualStyleBackColor = true;
+            this.BTN_ChoisirFichier.Click += new System.EventHandler(this.BTN_ChoisirFichier_Click);
+            // 
+            // DGV_Population
+            // 
+            this.DGV_Population.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Population.Location = new System.Drawing.Point(182, 388);
+            this.DGV_Population.Name = "DGV_Population";
+            this.DGV_Population.Size = new System.Drawing.Size(36, 33);
+            this.DGV_Population.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 430);
+            this.Controls.Add(this.DGV_Population);
             this.Controls.Add(this.BTN_ChoisirFichier);
             this.Controls.Add(this.BTN_Generer);
             this.Controls.Add(this.BTN_Save);
@@ -226,6 +238,7 @@
             this.GB_Methodes.PerformLayout();
             this.GB_Fichier.ResumeLayout(false);
             this.GB_Fichier.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Population)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,6 +260,7 @@
         private System.Windows.Forms.Button BTN_Save;
         private System.Windows.Forms.Button BTN_Generer;
         private System.Windows.Forms.Button BTN_ChoisirFichier;
+        private System.Windows.Forms.DataGridView DGV_Population;
     }
 }
 
