@@ -69,12 +69,38 @@ namespace tp1_echantillonnage
 
         private void BTN_Save_Click(object sender, EventArgs e)
         {
+            SaveFiles();
+        }
+
+        private void SaveFiles()
+        {
             FolderBrowserDialog ChoisirPath = new FolderBrowserDialog();
-           // SaveFichiers.FileName = DGV_Fichier.Rows[0].Cells[0].Value.ToString();
-           // SaveFichiers.DefaultExt = ".xlsx";
+
             if (ChoisirPath.ShowDialog() == DialogResult.OK)
             {
-                //ChoisirPath.SelectedPath
+                Excel.Application xlApp;
+                Excel.Workbook xlWorkBook;
+                Excel.Worksheet xlWorkSheet;
+                object misValue = System.Reflection.Missing.Value;
+
+                xlApp = new Excel.Application();
+                xlWorkBook = xlApp.Workbooks.Add(misValue);
+                xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+                int i = 0;
+                int j = 0;
+
+                for (i = 0; i <= DGV_Echantillon.RowCount - 1; i++)
+                {
+                    for (j = 0; j <= DGV_Echantillon.ColumnCount - 1; j++)
+                    {
+                        DataGridViewCell cell = DGV_Echantillon[j, i];
+                        xlWorkSheet.Cells[i + 1, j + 1] = cell.Value;
+                    }
+                }
+
+                xlWorkBook.SaveAs(ChoisirPath.SelectedPath + "\\" + DGV_Fichier.Rows[0].Cells[0].Value, Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+                xlWorkBook.Close(true, misValue, misValue);
+                xlApp.Quit();
             }
         }
     }
