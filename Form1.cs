@@ -27,21 +27,54 @@ namespace tp1_echantillonnage
                 Excel.Workbook workbook = excel.Workbooks.Open(ChoixFichier.FileName);
                 Excel.Worksheet worksheet = workbook.ActiveSheet;
 
+                int found = ChoixFichier.FileName.LastIndexOf(@"\");
+                string fileName = ChoixFichier.FileName.Substring(found + 1);
+                LB_NomDuFichierChoisi.Text = fileName;
+
                 int rowsCount = worksheet.UsedRange.Rows.Count;
 
-                //Initializing Columns
-                DGV_Population.ColumnCount = worksheet.UsedRange.Columns.Count;
-                for (int x = 0; x < DGV_Population.ColumnCount; x++)
-                {
-                    DGV_Population.Columns[x].Name = "Column " + x.ToString();
-                }
+                //worksheet.Cells[i + 1, x].Value);
 
-                for (int i=0; i < rowsCount; i++)
-                {
-                    //dataGridView1.Rows[i].Cells["Column1"].Value = worksheet.Cells[i + 1, 1].Value;
-                    //dataGridView1.Rows[i].Cells["Column2"].Value = worksheet.Cells[i + 1, 2].Value;
-                    DGV_Population.Rows.Add(worksheet.Cells[i + 1, 1].Value, worksheet.Cells[i + 1, 2].Value);
-                }
+            }
+        }
+
+        private void BTN_Generer_Click(object sender, EventArgs e)
+        {
+            if(RB_AleatoireSimple.Checked == true)
+            {
+                CreerFichiers();
+            }
+            else if(RB_Systematique.Checked == true)
+            {
+                CreerFichiers();
+            }
+            BTN_Save.Enabled = true;
+        }
+
+        private void CreerFichiers()
+        {
+            string nomsFichiers = TB_NomsFichiers.Text;
+            int nbEchantillons = Convert.ToInt32( TB_NbEchantillons.Text);
+            int tailleEchantillons = Convert.ToInt32( TB_TailleEchantillons.Text);
+
+            for(int i = 0; i<nbEchantillons; i++)
+            {
+                DGV_Fichier.Rows.Add(nomsFichiers + " " + (i+1));
+            }
+
+            // Resize les cells du DGV
+            DGV_Fichier.AutoResizeColumnHeadersHeight();
+            DGV_Fichier.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders);
+        }
+
+        private void BTN_Save_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SaveFichiers = new SaveFileDialog();
+            SaveFichiers.FileName = DGV_Fichier.Rows[0].Cells[0].Value.ToString();
+            SaveFichiers.DefaultExt = ".xlsx";
+            if (SaveFichiers.ShowDialog() == DialogResult.OK)
+            {
+
             }
         }
     }
