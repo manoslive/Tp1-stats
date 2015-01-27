@@ -1,3 +1,13 @@
 C:\Users\Emmanuel\Documents\Prog\Stats\tp1 echantillonnage\bin\Debug\tp1 echantillonnage.exe.config
 C:\Users\Emmanuel\Documents\Prog\Stats\Tp1-stats\bin\Debug\tp1 echantillonnage.exe.config
 C:\Users\Emmanuel\Documents\Prog\Stats\Tp1-stats\obj\Debug\tp1 echantillonnage.csproj.ResolveComReference.cache
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\bin\Debug\tp1 echantillonnage.exe.config
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1 echantillonnage.csproj.ResolveComReference.cache
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\bin\Debug\tp1 echantillonnage.exe
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\bin\Debug\tp1 echantillonnage.pdb
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1 echantillonnage.csprojResolveAssemblyReference.cache
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1_echantillonnage.Form1.resources
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1_echantillonnage.Properties.Resources.resources
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1 echantillonnage.csproj.GenerateResource.Cache
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1 echantillonnage.exe
+C:\Users\Shaun\Documents\Programmation\Prog (Session 4)\Statistiques\Travail 1\Tp1-stats\obj\Debug\tp1 echantillonnage.pdb

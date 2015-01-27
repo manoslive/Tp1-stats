@@ -74,7 +74,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(159, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(123, 20);
             this.textBox1.TabIndex = 1;
@@ -82,7 +82,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(159, 79);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(123, 20);
             this.textBox2.TabIndex = 1;
@@ -91,7 +91,7 @@
             // 
             this.RB_AleatoireSimple.AutoSize = true;
             this.RB_AleatoireSimple.Location = new System.Drawing.Point(24, 29);
-            this.RB_AleatoireSimple.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_AleatoireSimple.Margin = new System.Windows.Forms.Padding(2);
             this.RB_AleatoireSimple.Name = "RB_AleatoireSimple";
             this.RB_AleatoireSimple.Size = new System.Drawing.Size(98, 17);
             this.RB_AleatoireSimple.TabIndex = 2;
@@ -103,7 +103,7 @@
             // 
             this.RB_Systematique.AutoSize = true;
             this.RB_Systematique.Location = new System.Drawing.Point(24, 49);
-            this.RB_Systematique.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Systematique.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Systematique.Name = "RB_Systematique";
             this.RB_Systematique.Size = new System.Drawing.Size(88, 17);
             this.RB_Systematique.TabIndex = 2;
@@ -115,7 +115,7 @@
             // 
             this.DGV_Fichier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Fichier.Location = new System.Drawing.Point(19, 140);
-            this.DGV_Fichier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGV_Fichier.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_Fichier.Name = "DGV_Fichier";
             this.DGV_Fichier.RowTemplate.Height = 28;
             this.DGV_Fichier.Size = new System.Drawing.Size(151, 242);
@@ -125,7 +125,7 @@
             // 
             this.DGV_Echantillon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Echantillon.Location = new System.Drawing.Point(229, 140);
-            this.DGV_Echantillon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGV_Echantillon.Margin = new System.Windows.Forms.Padding(2);
             this.DGV_Echantillon.Name = "DGV_Echantillon";
             this.DGV_Echantillon.Size = new System.Drawing.Size(385, 242);
             this.DGV_Echantillon.TabIndex = 3;
@@ -135,9 +135,9 @@
             this.GB_Methodes.Controls.Add(this.RB_Systematique);
             this.GB_Methodes.Controls.Add(this.RB_AleatoireSimple);
             this.GB_Methodes.Location = new System.Drawing.Point(453, 14);
-            this.GB_Methodes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Methodes.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Methodes.Name = "GB_Methodes";
-            this.GB_Methodes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Methodes.Padding = new System.Windows.Forms.Padding(2);
             this.GB_Methodes.Size = new System.Drawing.Size(155, 116);
             this.GB_Methodes.TabIndex = 4;
             this.GB_Methodes.TabStop = false;
@@ -152,9 +152,9 @@
             this.GB_Fichier.Controls.Add(this.label2);
             this.GB_Fichier.Controls.Add(this.textBox1);
             this.GB_Fichier.Location = new System.Drawing.Point(158, 11);
-            this.GB_Fichier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Fichier.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Fichier.Name = "GB_Fichier";
-            this.GB_Fichier.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Fichier.Padding = new System.Windows.Forms.Padding(2);
             this.GB_Fichier.Size = new System.Drawing.Size(291, 116);
             this.GB_Fichier.TabIndex = 4;
             this.GB_Fichier.TabStop = false;
@@ -163,7 +163,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(159, 53);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(123, 20);
             this.textBox3.TabIndex = 1;
@@ -181,7 +181,7 @@
             // BTN_Save
             // 
             this.BTN_Save.Location = new System.Drawing.Point(542, 396);
-            this.BTN_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_Save.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_Save.Name = "BTN_Save";
             this.BTN_Save.Size = new System.Drawing.Size(73, 25);
             this.BTN_Save.TabIndex = 5;
@@ -191,7 +191,7 @@
             // BTN_Generer
             // 
             this.BTN_Generer.Location = new System.Drawing.Point(465, 396);
-            this.BTN_Generer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTN_Generer.Margin = new System.Windows.Forms.Padding(2);
             this.BTN_Generer.Name = "BTN_Generer";
             this.BTN_Generer.Size = new System.Drawing.Size(73, 25);
             this.BTN_Generer.TabIndex = 5;
@@ -211,16 +211,16 @@
             // DGV_Population
             // 
             this.DGV_Population.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Population.Location = new System.Drawing.Point(182, 388);
+            this.DGV_Population.Location = new System.Drawing.Point(715, 43);
             this.DGV_Population.Name = "DGV_Population";
-            this.DGV_Population.Size = new System.Drawing.Size(36, 33);
+            this.DGV_Population.Size = new System.Drawing.Size(224, 311);
             this.DGV_Population.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 430);
+            this.ClientSize = new System.Drawing.Size(1000, 430);
             this.Controls.Add(this.DGV_Population);
             this.Controls.Add(this.BTN_ChoisirFichier);
             this.Controls.Add(this.BTN_Generer);
@@ -229,7 +229,7 @@
             this.Controls.Add(this.GB_Methodes);
             this.Controls.Add(this.DGV_Echantillon);
             this.Controls.Add(this.DGV_Fichier);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Fichier)).EndInit();

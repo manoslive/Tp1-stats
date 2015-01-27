@@ -25,7 +25,23 @@ namespace tp1_echantillonnage
             {
                 Excel.Application excel = new Excel.Application();
                 Excel.Workbook workbook = excel.Workbooks.Open(ChoixFichier.FileName);
+                Excel.Worksheet worksheet = workbook.ActiveSheet;
 
+                int rowsCount = worksheet.UsedRange.Rows.Count;
+
+                //Initializing Columns
+                DGV_Population.ColumnCount = worksheet.UsedRange.Columns.Count;
+                for (int x = 0; x < DGV_Population.ColumnCount; x++)
+                {
+                    DGV_Population.Columns[x].Name = "Column " + x.ToString();
+                }
+
+                for (int i=0; i < rowsCount; i++)
+                {
+                    //dataGridView1.Rows[i].Cells["Column1"].Value = worksheet.Cells[i + 1, 1].Value;
+                    //dataGridView1.Rows[i].Cells["Column2"].Value = worksheet.Cells[i + 1, 2].Value;
+                    DGV_Population.Rows.Add(worksheet.Cells[i + 1, 1].Value, worksheet.Cells[i + 1, 2].Value);
+                }
             }
         }
     }
