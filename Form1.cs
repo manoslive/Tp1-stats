@@ -69,12 +69,12 @@ namespace tp1_echantillonnage
 
         private void BTN_Save_Click(object sender, EventArgs e)
         {
-            SaveFileDialog SaveFichiers = new SaveFileDialog();
-            SaveFichiers.FileName = DGV_Fichier.Rows[0].Cells[0].Value.ToString();
-            SaveFichiers.DefaultExt = ".xlsx";
-            if (SaveFichiers.ShowDialog() == DialogResult.OK)
+            FolderBrowserDialog ChoisirPath = new FolderBrowserDialog();
+           // SaveFichiers.FileName = DGV_Fichier.Rows[0].Cells[0].Value.ToString();
+           // SaveFichiers.DefaultExt = ".xlsx";
+            if (ChoisirPath.ShowDialog() == DialogResult.OK)
             {
-
+                //ChoisirPath.SelectedPath
             }
         }
     }
